@@ -21,7 +21,7 @@ class App:
         self.app.run()
 
     def get_app(self):
-        return pystray.Icon('JP Switcher', ACTIVE_LOGO if self.status else INACTIVE_LOGO, menu=pystray.Menu(
+        return pystray.Icon('JP Keyboard Layout Switcher', ACTIVE_LOGO if self.status else INACTIVE_LOGO, menu=pystray.Menu(
             pystray.MenuItem(text='Переключить', action=self.on_clicked, default=True),
             pystray.MenuItem(text='Выйти', action=self.app_exit)
         ))

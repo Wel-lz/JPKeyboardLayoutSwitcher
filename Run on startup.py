@@ -19,7 +19,7 @@ def get_file_path(file_name, err_msg):
 def create_shortcut(target_path, icon_path):
     appdata_folder = os.getenv('APPDATA')
     startup_folder = join(appdata_folder, 'Microsoft/Windows/Start Menu/Programs/Startup')
-    lnk_path = join(startup_folder, 'JP Keyboard Switcher.lnk')
+    lnk_path = join(startup_folder, 'JP Keyboard Layout Switcher.lnk')
 
     shell = win32com.client.Dispatch("WScript.Shell")
     shortcut = shell.CreateShortCut(lnk_path)
@@ -31,7 +31,7 @@ def create_shortcut(target_path, icon_path):
 
 
 def main():
-    target_path = get_file_path('JP Keyboard Switcher.exe', err_msg=u'В текущей папке нет файла приложения "app.exe"')
+    target_path = get_file_path('JP Keyboard Layout Switcher.exe', err_msg=u'В текущей папке нет файла приложения "app.exe"')
     if target_path is None:
         return
     icon_path = get_file_path('logo.ico', err_msg=u'В текущей папке нет файла иконки "logo.ico"')
