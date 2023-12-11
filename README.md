@@ -38,6 +38,7 @@ mv "dist/JP Keyboard Layout Switcher.exe" "release/JP Keyboard Layout Switcher.e
 mv "dist/Run on startup.exe" "release/Run on startup.exe" 
 mv "dist/Switcher.exe" "release/Switcher.exe"
 cp -r img release/
+mv release/img/logo.ico release/logo.ico
 
 # Clear garbage
 rm "JP Keyboard Layout Switcher.spec"

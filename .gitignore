@@ -1,5 +1,7 @@
 venv
 .idea
 *.exe
-output
+build
+dist
 release
+*.zip
